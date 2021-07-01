@@ -12,7 +12,7 @@ from matplotlib.collections import LineCollection
 import matplotlib.animation as animation
 
 
-class Quadcoptor:
+class Quadrotor:
     def __init__(self, pos_seq, trace_color='b', name='Quadrotor'):
         # self.x = init_pos[0]
         # self.y = init_pos[1]
@@ -116,7 +116,7 @@ if __name__ == '__main__':
     pos_seq = list(zip(x, y, theta))
 
     # 实例化无人机
-    robot1 = Quadcoptor(pos_seq, trace_color='g', name='Quadrotor1')
+    robot1 = Quadrotor(pos_seq, trace_color='g', name='Quadrotor1')
 
     fig, ax = plt.subplots()
     ax.set_xlim([-10, 20])  # 设置图像显示范围
